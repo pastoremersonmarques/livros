@@ -67,12 +67,38 @@
             <div>
                 <!-- Capa Completa do Livro -->
                 <div class="book-cover-container w-full bg-gradient-to-br from-emerald-950 via-slate-900 to-slate-950 rounded-xl mb-4 overflow-hidden border border-emerald-600/40 flex items-center justify-center relative shadow-inner group">
-                    <img src="CRESCENDO COM DEUS CAPA.jpg" alt="Coleção Crescendo com Deus" class="w-full h-full object-contain group-hover:scale-105 transition duration-300" onerror="this.onerror=null; this.src='PRODUÇÃO DA CAPA_PRONTA_JPEG.jpg';">
+                    <img src="CRESCENDO COM DEUS CAPA.jpg" alt="Coleção Crescendo com Deus" class="w-full h-full object-contain group-hover:scale-105 transition duration-300">
                 </div>
                 <div class="text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-1">Discipulado Continuado</div>
                 <h3 class="text-2xl font-bold text-white mb-2">Coleção Crescendo com Deus</h3>
                 <p class="text-slate-300 text-xs md:text-sm mb-4">
                     Jornada completa de formação em 4 etapas essenciais: <strong>1. Nascer</strong>, <strong>2. Crescer</strong>, <strong>3. Amadurecer</strong> e <strong>4. Servir</strong>. Desenvolvido para estruturar o discipulado, a consolidação de novos convertidos e o fortalecimento espiritual da igreja local com profundidade bíblica e clareza pedagógica.
+                </p>
+            </div>
+            <div class="pt-3 border-t border-slate-700 flex gap-2">
+                <a href="https://uiclap.bio/emersonmarques" target="_blank" class="flex-1 bg-amber-600 hover:bg-amber-500 text-slate-950 font-bold py-2 px-2 rounded-lg text-center text-xs transition flex items-center justify-center gap-1">
+                    <i class="fa-solid fa-book"></i> Físico
+                </a>
+                <a href="https://www.amazon.com.br/stores/author/B0D5772C12/allbooks" target="_blank" class="flex-1 bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-2 rounded-lg text-center text-xs transition flex items-center justify-center gap-1">
+                    <i class="fa-solid fa-tablet-screen-button"></i> E-book
+                </a>
+            </div>
+        </div>
+
+        <!-- CARD 1.5: Crescendo com Deus (Etapa 1 - Nascer) -->
+        <div class="book-card discipulado bg-slate-800 border border-slate-700 rounded-2xl p-6 flex flex-col justify-between shadow-xl relative overflow-hidden group hover:border-emerald-500 transition">
+            <div class="absolute top-0 right-0 bg-emerald-500 text-slate-950 font-extrabold text-xs px-3 py-1 rounded-bl-lg z-10">
+                ETAPA 1 - NASCER
+            </div>
+            <div>
+                <!-- Capa Completa do Livro -->
+                <div class="book-cover-container w-full bg-gradient-to-br from-emerald-950 via-slate-900 to-slate-950 rounded-xl mb-4 overflow-hidden border border-emerald-600/40 flex items-center justify-center relative shadow-inner group">
+                    <img src="PRODUÇÃO DA CAPA_PRONTA_JPEG.jpg" alt="Crescendo com Deus Etapa 1" class="w-full h-full object-contain group-hover:scale-105 transition duration-300">
+                </div>
+                <div class="text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-1">Fundamentos da Fé</div>
+                <h3 class="text-2xl font-bold text-white mb-2">Crescendo com Deus (Etapa 1)</h3>
+                <p class="text-slate-300 text-xs md:text-sm mb-4">
+                    Um Novo Começo com Cristo. O guia inicial indispensável para novos convertidos, focando nos pilares de Conhecer, Crescer e Permanecer. <em>"O discípulo nasce para uma nova vida."</em>
                 </p>
             </div>
             <div class="pt-3 border-t border-slate-700 flex gap-2">
@@ -335,7 +361,7 @@
             event.target.classList.remove('bg-slate-800', 'text-slate-300');
             event.target.classList.add('bg-amber-500', 'text-slate-950', 'font-bold');
 
-            // Filtra os cards
+         // Filtra os cards
             cards.forEach(card => {
                 if (cat === 'all' || card.classList.contains(cat)) {
                     card.style.display = 'flex';
